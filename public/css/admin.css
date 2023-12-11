@@ -1,0 +1,84 @@
+.form {
+    width: 30rem;
+    padding: 1rem 2rem;
+    border: 1px solid #adadad;
+    border-radius: 5px;
+}
+
+.form h2 {
+    text-align: center;
+}
+
+.form ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.form ul li {
+    width: 100%;
+}
+
+.form ul li label {
+    margin-bottom: 0.3rem;
+}
+
+.form ul li input,
+.form ul li textarea,
+.form ul li select {
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+.form ul li:nth-last-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+
+.form ul li:nth-last-child(1) a,
+.form ul li:nth-last-child(1) button {
+    width: 7rem;
+}
+
+.form ul li:nth-last-child(1) a {
+    text-decoration: none;
+}
+
+
+td[data-product="Diajukan"] {
+    background-color: rgb(223, 200, 0);
+}
+
+td[data-product="Dipinjam"] {
+    background-color: rgb(204, 0, 0);
+}
+
+td[data-product="Dikembalikan"] {
+    background-color: rgb(0, 187, 0);
+}
+
+@media(max-width: 450px) {
+    .form {
+        border: none;
+    }
+}
+
+.t tbody tr td:nth-last-child(1) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.t tbody tr td .button {
+    width: 4rem;
+}
+
+.t tbody tr td button a {
+    text-decoration: none;
+}
